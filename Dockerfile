@@ -24,8 +24,8 @@ RUN /usr/sbin/nginx -V
 #RUN sed -ie "26a more_clear_headers Server;" /etc/nginx/nginx.conf
 
 RUN cat -n /etc/nginx/nginx.conf
-RUN ls -alF /etc/nginx/modules-enabled/*.conf
-RUN cat /usr/share/nginx/modules-available/mod-http-headers-more-filter.conf
+#RUN ls -alF /etc/nginx/modules-enabled/*.conf
+#RUN cat /usr/share/nginx/modules-available/mod-http-headers-more-filter.conf
 
 WORKDIR /
 
